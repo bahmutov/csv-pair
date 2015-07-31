@@ -1,0 +1,34 @@
+{
+  "name": "csv-pair",
+  "version": "0.1.0",
+  "description": "Combines two CSV files merging identical columns",
+  "main": "src/csv-pair.js",
+  "dependencies": {
+    "csv-load-sync": "0.0.3",
+    "ramda": "0.17.1",
+    "check-more-types": "1.8.2",
+    "lazy-ass": "0.5.8"
+  },
+  "devDependencies": {
+    "mocha": "2.2.5"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/*spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/csv-pair.git"
+  },
+  "keywords": [
+    "csv",
+    "combination",
+    "pair",
+    "cli"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/csv-pair/issues"
+  },
+  "homepage": "https://github.com/bahmutov/csv-pair"
+}
