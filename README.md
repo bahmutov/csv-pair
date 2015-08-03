@@ -37,9 +37,18 @@ combined.csv
 
 ## Install
 
-Need [NodeJS](https://nodejs.org/) and this package
+Need [NodeJS](https://nodejs.org/), you can check if Node is installed locally
+by opening a terminal window and trying command
 
-    npm install -g csv-pair
+    node --version
+
+Then install this application
+
+    sudo npm install -g csv-pair
+
+Check if the tool has been installed by running from the terminal
+
+    csv-pair
 
 ### Small print
 

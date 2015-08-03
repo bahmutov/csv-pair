@@ -1,8 +1,11 @@
 {
   "name": "csv-pair",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Combines two CSV files merging identical columns",
   "main": "src/csv-pair.js",
+  "bin": {
+    "csv-pair": "./bin/csv-pair.js"
+  },
   "dependencies": {
     "csv-load-sync": "0.0.3",
     "ramda": "0.17.1",
