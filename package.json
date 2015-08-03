@@ -10,11 +10,13 @@
     "lazy-ass": "0.5.8"
   },
   "devDependencies": {
-    "mocha": "2.2.5"
+    "mocha": "2.2.5",
+    "pre-git": "0.6.2"
   },
   "scripts": {
     "test": "mocha -R spec test/*spec.js",
-    "watch": "npm test -- --watch"
+    "watch": "npm test -- --watch",
+    "example": "./bin/csv-pair.js test/1-10-days.csv test/1-5-days.csv example.csv"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,10 @@
   "bugs": {
     "url": "https://github.com/bahmutov/csv-pair/issues"
   },
-  "homepage": "https://github.com/bahmutov/csv-pair"
+  "homepage": "https://github.com/bahmutov/csv-pair",
+  "pre-commit": [
+    "npm test",
+    "npm run example",
+    "npm version"
+  ]
 }
