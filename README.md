@@ -46,9 +46,11 @@ Then install this application
 
     sudo npm install -g csv-pair
 
-Check if the tool has been installed by running from the terminal
+Check if the tool has been installed by running from the terminal. It should show the input 
+parameters
 
-    csv-pair
+    $ csv-pair
+    Usage: <filename1.csv> <filename2.csv> <output.csv>
 
 ### Small print
 
