@@ -1,6 +1,6 @@
 {
   "name": "csv-pair",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Combines two CSV files merging identical columns",
   "main": "src/csv-pair.js",
   "dependencies": {

@@ -10,6 +10,37 @@
 [csv-pair-ci-image]: https://travis-ci.org/bahmutov/csv-pair.png?branch=master
 [csv-pair-ci-url]: https://travis-ci.org/bahmutov/csv-pair
 
+Example: combine two CSV files. Some columns are identical, some are different
+
+a.csv
+
+    name,age,occupation
+    John,20,student
+    Mary,21,student
+
+b.csv
+
+    name,age,occupation
+    John,20,teacher
+    Mary,21,doctor
+
+Let us combine these two CSV files. Identical columns will be collapsed. Different values
+will have duplicate column
+
+    csv-pair a.csv b.csv combined.csv
+
+combined.csv
+
+    name,age,occupation - a.csv,occupation - b.csv
+    John,20,student,teacher
+    Mary,21,student,doctor
+
+## Install
+
+Need [NodeJS](https://nodejs.org/) and this package
+
+    npm install -g csv-pair
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
