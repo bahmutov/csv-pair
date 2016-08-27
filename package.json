@@ -6,6 +6,10 @@
   "bin": {
     "csv-pair": "./bin/csv-pair.js"
   },
+  "files": [
+    "src",
+    "bin"
+  ],
   "dependencies": {
     "csv-load-sync": "1.0.0",
     "ramda": "0.17.1",
@@ -21,7 +25,8 @@
     "test": "mocha -R spec test/*spec.js",
     "watch": "npm test -- --watch",
     "example": "./bin/csv-pair.js test/1-10-days.csv test/1-5-days.csv example.csv",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
