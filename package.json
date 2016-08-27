@@ -7,7 +7,7 @@
     "csv-pair": "./bin/csv-pair.js"
   },
   "dependencies": {
-    "csv-load-sync": "0.0.3",
+    "csv-load-sync": "1.0.0",
     "ramda": "0.17.1",
     "check-more-types": "1.8.2",
     "lazy-ass": "0.5.8"
