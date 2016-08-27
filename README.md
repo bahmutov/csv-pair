@@ -4,11 +4,14 @@
 
 [![NPM][csv-pair-icon] ][csv-pair-url]
 [![Build status][csv-pair-ci-image] ][csv-pair-ci-url]
+[![semantic-release][semantic-image] ][semantic-url]
 
-[csv-pair-icon]: https://nodei.co/npm/csv-pair.png?downloads=true
+[csv-pair-icon]: https://nodei.co/npm/csv-pair.svg?downloads=true
 [csv-pair-url]: https://npmjs.org/package/csv-pair
-[csv-pair-ci-image]: https://travis-ci.org/bahmutov/csv-pair.png?branch=master
+[csv-pair-ci-image]: https://travis-ci.org/bahmutov/csv-pair.svg?branch=master
 [csv-pair-ci-url]: https://travis-ci.org/bahmutov/csv-pair
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
 
 Example: combine two CSV files. Some columns are identical, some are different
 
@@ -46,7 +49,7 @@ Then install this application
 
     sudo npm install -g csv-pair
 
-Check if the tool has been installed by running from the terminal. It should show the input 
+Check if the tool has been installed by running from the terminal. It should show the input
 parameters
 
     $ csv-pair

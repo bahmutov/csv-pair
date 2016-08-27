@@ -1,7 +1,7 @@
 {
   "name": "csv-pair",
-  "version": "0.2.0",
   "description": "Combines two CSV files merging identical columns",
+  "version": "0.0.0-semantic-release",
   "main": "src/csv-pair.js",
   "bin": {
     "csv-pair": "./bin/csv-pair.js"
@@ -14,12 +14,14 @@
   },
   "devDependencies": {
     "mocha": "2.2.5",
-    "pre-git": "0.6.2"
+    "pre-git": "0.6.2",
+    "semantic-release": "^4.3.5"
   },
   "scripts": {
     "test": "mocha -R spec test/*spec.js",
     "watch": "npm test -- --watch",
-    "example": "./bin/csv-pair.js test/1-10-days.csv test/1-5-days.csv example.csv"
+    "example": "./bin/csv-pair.js test/1-10-days.csv test/1-5-days.csv example.csv",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
